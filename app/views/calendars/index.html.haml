@@ -1,0 +1,8 @@
+%h1 Listing bookings
+- @rooms.each do |r| 
+  %div.room
+    %h2= r
+    %ul
+      -@rooms_and_times[r].each do |o|
+        %li{'class' => o[:state],'style' => "width: #{o[:duration]/50}px"}= "#{o[:start].to_s(:time)} -> #{(o[:start]+o[:duration]).to_s(:time)}"
+%br/
