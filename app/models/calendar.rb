@@ -63,4 +63,12 @@ class Calendar < ActiveRecord::Base
     end
     return rooms
   end
+  
+  # def self.rank
+  #   ranked = {}
+  #   rooms = self.get_day(:day => Time.now)
+  #   unless rooms.empty?
+  #     rooms.each do |room, times|
+  #       if times.[:state] = :whole_day
+  #         ranked.store()
 end

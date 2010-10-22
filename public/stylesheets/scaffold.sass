@@ -1,24 +1,32 @@
 body
-  background-color: #fff
-  color: #fff
+  background-color: #E7E7E7
+  color: #000
   font-family: verdana, arial, helvetica, sans-serif
   font-size: 13px
   line-height: 18px
   
 .main
-  text-shadow: 0px 1px 1px #383838
-  background: -webkit-gradient(linear, left top, left bottom, from(#858385), to(#B0ADAF), color-stop(0.5, #8F8C8E))
+  text-shadow: 0px 1px 1px #B7B7B7
+  -webkit-box-shadow: 1px 1px 1px #939393
+  background-color: white
+  //background: -webkit-gradient(linear, left top, left bottom, from(#858385), to(#B0ADAF), color-stop(0.5, #8F8C8E))
   margin-left: auto
   margin-right: auto
-  border-radius: 5px
-  border-left: 1px solid #C8C8C8
-  border-right: 1px solid #878787
-  border-top: 1px solid #5A5A5A
+  border-radius: 10px
+  // border-left: 1px solid #C8C8C8
+  //   border-right: 1px solid #878787
+  //   border-top: 1px solid #5A5A5A
   padding: 2em
   overflow: auto
   width: 800px
   h2
+    text-shadow: 0px 1px 1px #D3D3D3
     margin: 0px
+    color: #FFF
+
+h1
+  color: #B2B2B2
+  text-shadow: none
 
 p, ol, ul, td
   font-family: verdana, arial, helvetica, sans-serif
@@ -45,16 +53,16 @@ div
   &.field, &.actions
     margin-bottom: 10px
   &.room
-    background-color: #06AB00
+    background: -webkit-gradient(linear, left top, left bottom, from(#0057AB), to(#006CD5))
     float: left
     clear: left
     padding: 10px
     margin-bottom: 2em
     overflow: auto
     border-radius: 5px
-    border-bottom: 1px solid #047D00
-    border-top: 1px solid #07C900
-    border-left: 1px solid #06BC00
+    border-bottom: 1px solid #004C96
+    border-top: 1px solid #006CD4
+    border-left: 1px solid #0057AB
     h2
       text-shadow: #7B7B7B -1px 1px 0px
 ul
@@ -68,18 +76,18 @@ li
     float: left
     list-style-type: none
     border-radius: 3px
-    margin: 0px 0px 3px 3px
+    margin: 0px 3px 0px 0px
     padding-left: 0.5em
     vertical-align: middle
   &.available
-    background-color: gray
+    background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#D3D3D3))
     border-top: 1px solid #4F4F4F
   &.occupied
     text-shadow: 0px 1px 1px #C6C6C6
-    border: 1px
-    border-top: 1px solid gray
-    border-right: 1px solid gray
-    background-color: gray
+    // border: 1px
+    // border-top: 1px solid gray
+    // border-right: 1px solid gray
+    background-color: #B2B2B2
     color: #404040
   &.whole_day
     
