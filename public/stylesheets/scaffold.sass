@@ -4,7 +4,22 @@ body
   font-family: verdana, arial, helvetica, sans-serif
   font-size: 13px
   line-height: 18px
-  
+  margin: 0px
+  padding: 0px
+.header
+  background: -webkit-gradient(linear, left top, left bottom, from(#0057AB), to(#006CD5))
+  -webkit-box-shadow: 0px 0px 5px #000000
+  height: 10px
+  width: 100%
+.logo
+  margin: 18px 0px 0px 0px
+  font-family: 'letter gothic std'
+  font-size: 60px
+  color: #606060
+  text-shadow: 0px 2px 5px #8E8E8E
+  line-height: 60px
+  width: 800px
+  margin: 0px auto 0px auto
 .main
   text-shadow: 0px 1px 1px #B7B7B7
   -webkit-box-shadow: 1px 1px 1px #939393
@@ -13,9 +28,6 @@ body
   margin-left: auto
   margin-right: auto
   border-radius: 10px
-  // border-left: 1px solid #C8C8C8
-  //   border-right: 1px solid #878787
-  // border-top: 2px solid #5A5A5A
   padding: 2em
   overflow: auto
   width: 800px
@@ -23,6 +35,15 @@ body
     text-shadow: 0px 1px 1px #D3D3D3
     margin: 0px
     color: #FFF
+.controls
+  width: 100%
+  overflow: auto
+  li
+    color: red
+    // float: left
+  #next
+  #today
+  #previous
 
 h1
   color: #B2B2B2
@@ -67,14 +88,14 @@ div
       text-shadow: #7B7B7B -1px 1px 0px
 ul
   padding: 0px
-li  
+li
+  list-style-type: none
   &.occupied, &.available
     overflow: auto
     outline: 2px
     line-height: 2em
     height: 2em
     float: left
-    list-style-type: none
     border-radius: 3px
     margin: 0px 3px 0px 0px
     padding-left: 0.5em

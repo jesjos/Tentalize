@@ -14,8 +14,9 @@ class CalendarsController < ApplicationController
   # GET /calendars/1
   # GET /calendars/1.xml
   def show
-    @calendar = Calendar.find(params[:id])
-
+    puts params[:date]
+    @day = Calendar.get_day(:day => Time.parse(params[:date]))
+    @rooms = @day.keys.sort
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @calendar }

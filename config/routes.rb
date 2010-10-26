@@ -1,4 +1,5 @@
 Tentalize::Application.routes.draw do
+  match ':controller/(:action(/:date))' 
   resources :calendars
   root :to => 'calendars#index'
 

@@ -8,4 +8,6 @@ jQuery(function  () {
     if (ä(a[i]).width() < 80) ä(a[i]).text("");
   }
   
+  ä('#today').click()
+  
 })
